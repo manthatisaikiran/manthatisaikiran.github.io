@@ -75,16 +75,6 @@ body {
     color: var(--primary);
 }
 
-a {
-    color: blue;
-    text-decoration: none; /* Optional: removes the default underline */
-}
-
-/* Optional but highly recommended: Add a hover effect so users know it's clickable */
-a:hover {
-    color: darkblue; 
-    text-decoration: underline;
-}
 
 /* About Section */
 .about {
@@ -200,9 +190,15 @@ a:hover {
     flex-direction: column;
 }
 
-.article-card:hover {
-    border-color: var(--accent);
-    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+.article-card h4 a {
+    color: var(--accent); /* This makes it blue */
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.article-card h4 a:hover {
+    color: darkblue;
+    text-decoration: underline;
 }
 
 .article-thumbnail {
@@ -544,14 +540,15 @@ a:hover {
 }
 
 .footer-section a {
-    color: var(--secondary);
+    color: var(--accent); /* This makes it blue */
     text-decoration: none;
     font-size: 0.9rem;
     transition: color var(--transition);
 }
 
 .footer-section a:hover {
-    color: var(--primary);
+    color: darkblue;
+    text-decoration: underline;
 }
 
 .footer-bottom {
