@@ -75,6 +75,17 @@ body {
     color: var(--primary);
 }
 
+a {
+    color: blue;
+    text-decoration: none; /* Optional: removes the default underline */
+}
+
+/* Optional but highly recommended: Add a hover effect so users know it's clickable */
+a:hover {
+    color: darkblue; 
+    text-decoration: underline;
+}
+
 /* About Section */
 .about {
     padding: 5rem var(--spacing);
